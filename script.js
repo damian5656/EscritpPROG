@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     mensaje.textContent = '';
     mensaje.className = 'alerta';
 
-    if (!nombre) {
-      mensaje.textContent = '⚠️ El nombre no puede estar vacío.';
+    if (nombre.length<3) {
+      mensaje.textContent = '⚠️ El nombre no puede ser corto.';
       mensaje.classList.add('error');
       return;
     }
