@@ -1,0 +1,128 @@
+body{
+    background-color:rgba(0, 0, 0, 0.7);
+    background-image: url(Fondo.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Emblema One', system-ui, Arial, sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom: 5px solid yellow;
+    
+}
+header h2 {
+    margin-left: 10px;
+    color: yellow;
+    font-size: 2 em;
+}
+header nav{
+display: flex;
+gap: 20px;  
+ margin-left: auto;
+ padding: 10px;
+ 
+}
+nav a{
+    color:white;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#reserva-form{
+    background-color: rgb(31, 30, 30,0.99) ;
+    width: 350px;
+    height:400px;
+    margin-top:60px;
+    border-radius:20px;
+    align-items: center;
+    justify-content: center;
+}
+#reserva-form h2{
+  font-size: 2 em;
+  color: yellow;
+  margin-bottom: 20px;
+  margin-left:85px;
+}
+#reserva-form *{
+    margin-left: 20px;
+    margin-bottom:20px; 
+}
+label{
+    font-size: 15px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 90%;
+    padding: 5px; 
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em; 
+    background-color: rgb(31, 30, 30,1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+#reserva-form select{
+     width: 100;
+    padding: 5px; 
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em; 
+    background-color: rgb(31, 30, 30,1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+   
+
+}
+#reserva-form select{
+    width: 100;
+    padding: 5px; 
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1em; 
+    background-color: rgb(31, 30, 30,1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: white; 
+}
+#hola {
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    background-color: yellow;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em; 
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+#hola:hover{
+    background-color: rgb(189, 189, 3);
+}
+.alerta {
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.alerta.error {
+  color: #fff;
+  background-color: #e53935;
+  border-radius: 5px;
+}
+
+.alerta.ok {
+  color: #fff;
+  background-color: #43a047;
+  border-radius: 5px;
+}

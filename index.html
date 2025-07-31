@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <header><h2>🎸Rock Fest</h2> 
+    <nav>
+    <p><a href=""><b>Inicio</b></a></p>
+    <p><a href=""><b>Entradas</b></a></p>
+    <p><a href=""><b>Contactos</b></a></p>
+    </nav>
+   </header>
+   <main>
+     <form id="reserva-form">
+        <h2>🎸Rock Fest🎸</h2>
+      <label id="nombre">Nombre completo:</label><br>
+      <input class="input"type="text" id="nombres" required placeholder="Tu Nombre"><br>
+
+      <label id="cantidad">Cantidad de entradas:</label><br>
+      <input class="input" type="number" id="cantidades" required placeholder="Ej: 2"><br>
+
+      <label id="tipo">Tipo de entrada:</label>
+      <select id="tipos" required aria-placeholder="General - $1000"><br>
+        <option value="general" id="General">General - $1000</option>
+        <option value="vip" id="VIP">VIP - $2000</option>
+        <option value="platino" id="Platino">Platino - $3000</option>
+      </select><br>
+
+      <label id="codigo">Código de descuento (opcional):</label>
+      <input class="input" type="text" id="codigos" placeholder="Ingresa ROCK10">
+
+      <Input id="hola" type="submit" value="Calcular Total"></Input>
+      <div id="mensaje" class="alerta"></div>
+    </form>
+   </main>
+    
+</body>
+
+</html>
